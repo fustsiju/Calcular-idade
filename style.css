@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+  }
+  body {
+    background: #efefef;
+    color: #333;
+  }
+  .showcase {
+    background: #fff;
+    margin: 50px auto 0;
+    width: 90%;
+    max-width: 1100px;
+    text-align: center;
+    padding: 50px;
+  }
+  .showcase h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .showcase .input-field {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 50px 30px;
+  }
+  .showcase .input-field input {
+    height: 50px;
+    border: 1px solid #ccc;
+    background: transparent;
+    padding-left: 10px;
+    font-weight: 600;
+    outline: none;
+  }
+  .showcase .input-field button {
+    height: 50px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .showcase .input-field button.calcular {
+    background: dodgerblue;
+  }
+  .showcase .input-field button.reiniciar {
+    background: crimson;
+  }
+  .showcase .input-field button:hover {
+    transform: scale(0.98);
+  }
+  .showcase .resultado h3 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .showcase .resultado.error {
+    color: red;
+  }
+  .showcase .resultado.success {
+    color: limegreen;
+  }
+  @media (max-width: 768px) {
+    .showcase .input-field {
+      grid-template-columns: 1fr;
+      margin: 0 20px 30px;
+    }
+    .showcase {
+      padding: 20px;
+    }
+    .showcase h1 {
+      font-size: 35px;
+    }
+    .showcase .result h3 {
+      font-size: 17px;
+    }
+  }
+  
